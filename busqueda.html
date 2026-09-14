@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NexoTech México | Búsqueda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html"><span class="brand-mark">NX</span><span>NexoTech México<small>Rutas de aprendizaje tecnológico</small></span></a>
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Abrir navegación">☰</button>
+      <div class="nav-links" data-nav-links>
+        <a href="index.html">Inicio</a><a href="ruta.html">Mi Ruta Tech</a><a href="busqueda.html" aria-current="page">Explorar</a><a href="detalle.html">Recurso</a><a class="button" href="registro.html">Crear cuenta</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Explorar recursos</p>
+        <h1>Búsqueda rápida para usuarios que ya saben lo que necesitan.</h1>
+        <p class="page-lead">Filtros claros para comparar contenido por área, nivel y aplicación profesional sin recorrer secciones innecesarias.</p>
+        <p class="page-lead">Esta vista responde al perfil de usuarios que llegan con una intención concreta, como encontrar recursos intermedios de IA o comparar laboratorios por duración.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container search-shell">
+        <aside class="card elevated" aria-label="Filtros de recursos">
+          <span class="pill">Filtros</span>
+          <p class="muted">Refina el catálogo por tema y nivel. Los resultados se actualizan en la misma pantalla.</p>
+          <div class="field" style="margin-top:18px">
+            <label for="search">Buscar</label>
+            <input id="search" type="search" placeholder="IA, web, ciberseguridad..." data-search>
+          </div>
+          <div class="filter-group">
+            <label><input type="checkbox" value="web" data-filter> Desarrollo web</label>
+            <label><input type="checkbox" value="ia" data-filter> Inteligencia artificial</label>
+            <label><input type="checkbox" value="seguridad" data-filter> Ciberseguridad</label>
+            <label><input type="checkbox" value="intermedio" data-filter> Nivel intermedio</label>
+          </div>
+        </aside>
+
+        <section class="results" aria-label="Resultados">
+          <article class="card result-card" data-resource data-tags="web,inicial">
+            <div>
+              <span class="pill">Curso inicial</span>
+              <h2 style="margin-top:12px">Fundamentos HTML y CSS</h2>
+              <p class="muted">Base práctica para construir interfaces accesibles y responsivas.</p>
+              <div class="tag-row"><span class="tag">Web</span><span class="tag">4 horas</span><span class="tag">Proyecto guiado</span></div>
+            </div>
+            <a class="button" href="detalle.html">Ver recurso</a>
+          </article>
+          <article class="card result-card" data-resource data-tags="ia,intermedio">
+            <div>
+              <span class="pill">Ruta intermedia</span>
+              <h2 style="margin-top:12px">IA aplicada a productos digitales</h2>
+              <p class="muted">Casos de uso, prompts, evaluación y prototipos con IA generativa.</p>
+              <div class="tag-row"><span class="tag">IA</span><span class="tag">Intermedio</span><span class="tag">6 horas</span></div>
+            </div>
+            <a class="button secondary" href="detalle.html">Ver recurso</a>
+          </article>
+          <article class="card result-card" data-resource data-tags="seguridad,intermedio">
+            <div>
+              <span class="pill">Laboratorio</span>
+              <h2 style="margin-top:12px">Seguridad básica para sitios públicos</h2>
+              <p class="muted">Checklist de publicación, privacidad, formularios y buenas prácticas.</p>
+              <div class="tag-row"><span class="tag">Ciberseguridad</span><span class="tag">Intermedio</span><span class="tag">Checklist</span></div>
+            </div>
+            <a class="button secondary" href="detalle.html">Ver recurso</a>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Colecciones sugeridas</p>
+            <h2>Entradas rápidas al catálogo.</h2>
+          </div>
+          <p class="page-lead">Además del buscador, el usuario puede entrar por áreas frecuentes de aprendizaje y exploración profesional.</p>
+        </div>
+        <div class="grid-4">
+          <article class="mini-card"><strong>Primer sitio web</strong><span class="muted">HTML, CSS, accesibilidad y publicación.</span></article>
+          <article class="mini-card"><strong>IA para producto</strong><span class="muted">Prompts, evaluación y prototipos.</span></article>
+          <article class="mini-card"><strong>Seguridad esencial</strong><span class="muted">Buenas prácticas para proyectos públicos.</span></article>
+          <article class="mini-card"><strong>Portafolio técnico</strong><span class="muted">Evidencias, proyectos y presentación.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container callout">
+        <strong>Decisión UX:</strong>
+        <span>la búsqueda conserva los filtros visibles porque el usuario compara opciones y puede cambiar de criterio sin perder contexto.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><span>NexoTech México</span><a href="registro.html">Crear cuenta</a></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>

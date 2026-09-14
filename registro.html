@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NexoTech México | Registro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html"><span class="brand-mark">NX</span><span>NexoTech México<small>Rutas de aprendizaje tecnológico</small></span></a>
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Abrir navegación">☰</button>
+      <div class="nav-links" data-nav-links>
+        <a href="index.html">Inicio</a><a href="ruta.html">Mi Ruta Tech</a><a href="busqueda.html">Explorar</a><a href="detalle.html">Recurso</a><a class="button" href="registro.html" aria-current="page">Crear cuenta</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Registro</p>
+        <h1>Guarda tu ruta y vuelve cuando quieras.</h1>
+        <p class="page-lead">El cierre del flujo permite conservar progreso, personalizar recomendaciones y continuar desde el siguiente recurso sugerido.</p>
+        <p class="page-lead">En el prototipo, el registro funciona como confirmación del recorrido: el usuario pasa de explorar contenido a tener una trayectoria propia.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-shell">
+        <aside class="card elevated">
+          <span class="pill">Tu cuenta</span>
+          <h2 style="margin-top:14px">Acceso a Mi Ruta Tech</h2>
+          <p class="muted">Este formulario simula el paso de registro del prototipo. En una versión real permitiría guardar avances, favoritos y recomendaciones.</p>
+          <div class="path-list">
+            <div class="path-step"><span class="step-number">01</span><span><strong>Ruta</strong><br><span class="muted">Objetivo definido</span></span><span>Listo</span></div>
+            <div class="path-step"><span class="step-number">02</span><span><strong>Recurso</strong><br><span class="muted">Primer módulo seleccionado</span></span><span>Listo</span></div>
+            <div class="path-step"><span class="step-number">03</span><span><strong>Cuenta</strong><br><span class="muted">Guardar progreso</span></span><span>Ahora</span></div>
+          </div>
+        </aside>
+
+        <form class="card elevated" data-register-form>
+          <div class="grid-2">
+            <div class="field">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" autocomplete="name" required placeholder="Sofía Hernández">
+            </div>
+            <div class="field">
+              <label for="role">Perfil</label>
+              <select id="role" name="role">
+                <option>Estudiante</option>
+                <option>Profesional TI</option>
+                <option>Proveedor tecnológico</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Correo</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="nombre@correo.com">
+          </div>
+          <div class="field">
+            <label for="interest">Interés principal</label>
+            <select id="interest" name="interest">
+              <option>Crear una ruta de aprendizaje</option>
+              <option>Buscar recursos avanzados</option>
+              <option>Publicar una solución TI</option>
+            </select>
+          </div>
+          <label><input type="checkbox" required> Acepto recibir seguimiento sobre mi ruta tecnológica.</label>
+          <div class="actions">
+            <button class="red" type="submit">Crear cuenta</button>
+            <a class="button secondary" href="ruta.html">Volver a Mi Ruta Tech</a>
+          </div>
+          <p class="notice" data-register-message hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container grid-3">
+        <article class="mini-card">
+          <strong>Recomendaciones guardadas</strong>
+          <span class="muted">La cuenta conserva la ruta generada y los recursos vistos.</span>
+        </article>
+        <article class="mini-card">
+          <strong>Continuidad del aprendizaje</strong>
+          <span class="muted">El usuario puede retomar desde el recurso sugerido sin repetir el diagnóstico.</span>
+        </article>
+        <article class="mini-card">
+          <strong>Perfil tecnológico</strong>
+          <span class="muted">Los intereses declarados ayudan a ajustar futuras sugerencias de contenido.</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container callout">
+        <strong>Nota del prototipo:</strong>
+        <span>el formulario no envía datos reales; únicamente representa la experiencia de cierre y confirmación del flujo.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><span>NexoTech México</span><span>Flujo de registro simulado</span></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>

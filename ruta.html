@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NexoTech México | Mi Ruta Tech</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html"><span class="brand-mark">NX</span><span>NexoTech México<small>Rutas de aprendizaje tecnológico</small></span></a>
+      <button class="icon-button menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Abrir navegación">☰</button>
+      <div class="nav-links" data-nav-links>
+        <a href="index.html">Inicio</a><a href="ruta.html" aria-current="page">Mi Ruta Tech</a><a href="busqueda.html">Explorar</a><a href="detalle.html">Recurso</a><a class="button" href="registro.html">Crear cuenta</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Mi Ruta Tech</p>
+        <h1>Tu trayectoria tecnológica, ordenada desde el primer paso.</h1>
+        <p class="page-lead">Un diagnóstico breve transforma una intención amplia en una ruta accionable con recursos, progreso y próximos pasos.</p>
+        <p class="page-lead">La ruta no intenta mostrar todo el catálogo. Prioriza lo que el usuario necesita estudiar primero y deja visible cómo continuar.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <form class="card elevated" data-route-form>
+          <span class="pill">Diagnóstico</span>
+          <h2 style="margin-top:14px">Configura tu ruta</h2>
+          <p class="muted">Elige lo mínimo necesario para obtener una recomendación inicial.</p>
+          <div class="field">
+            <label for="goal">Objetivo principal</label>
+            <select id="goal" name="goal">
+              <option>Desarrollo web</option>
+              <option>Inteligencia artificial</option>
+              <option>Ciberseguridad</option>
+              <option>Soluciones TI para negocio</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="level">Nivel actual</label>
+            <select id="level" name="level">
+              <option>Inicial</option>
+              <option>Intermedio</option>
+              <option>Avanzado</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="time">Tiempo semanal disponible</label>
+            <select id="time" name="time">
+              <option>2 a 4 horas</option>
+              <option>5 a 8 horas</option>
+              <option>Más de 8 horas</option>
+            </select>
+          </div>
+          <button type="submit">Generar recomendación</button>
+          <p class="notice" data-route-result hidden></p>
+        </form>
+
+        <section class="card elevated" aria-labelledby="ruta-recomendada">
+          <span class="pill">Ruta recomendada</span>
+          <h2 id="ruta-recomendada" style="margin-top:14px">Desarrollo Web aplicado</h2>
+          <p class="muted">Secuencia pensada para iniciar con claridad, construir bases sólidas y cerrar con un proyecto publicable.</p>
+          <div class="progress" aria-label="35 por ciento completado"><span style="width:35%"></span></div>
+          <div class="path-list">
+            <a class="path-step" href="detalle.html"><span class="step-number">01</span><span><strong>Fundamentos HTML y CSS</strong><br><span class="muted">Estructura, accesibilidad y diseño adaptable.</span></span><span>35%</span></a>
+            <div class="path-step"><span class="step-number">02</span><span><strong>JavaScript para interacción</strong><br><span class="muted">Estados, eventos y filtros de interfaz.</span></span><span>0%</span></div>
+            <div class="path-step"><span class="step-number">03</span><span><strong>Proyecto integrador</strong><br><span class="muted">Publicación de una página funcional.</span></span><span>0%</span></div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container grid-3">
+        <article class="mini-card">
+          <strong>Criterio 1: objetivo</strong>
+          <span class="muted">La recomendación cambia si el usuario quiere aprender, actualizarse o publicar una solución.</span>
+        </article>
+        <article class="mini-card">
+          <strong>Criterio 2: nivel</strong>
+          <span class="muted">El sistema evita contenido demasiado básico o avanzado para reducir abandono.</span>
+        </article>
+        <article class="mini-card">
+          <strong>Criterio 3: disponibilidad</strong>
+          <span class="muted">La duración semanal define el ritmo de avance y el tamaño de cada módulo.</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container feature-strip">
+        <div class="card">
+          <p class="eyebrow">Qué recibe el usuario</p>
+          <h2>Una ruta breve, medible y fácil de retomar.</h2>
+          <p class="muted">El resultado del diagnóstico debe ayudar a actuar en ese momento, no solo a navegar otro listado. Por eso la ruta muestra orden, avance y una primera acción concreta.</p>
+        </div>
+        <div class="card">
+          <ul class="content-list">
+            <li><strong>Primer recurso recomendado</strong><span class="muted">Contenido inicial con duración, nivel y propósito.</span></li>
+            <li><strong>Siguiente paso visible</strong><span class="muted">La interfaz comunica qué sigue antes de terminar el recurso actual.</span></li>
+            <li><strong>Progreso guardable</strong><span class="muted">El registro permite continuar la ruta en otra sesión.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><span>NexoTech México</span><a href="busqueda.html">Continuar a exploración</a></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
